@@ -1,0 +1,143 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\rajiv\\oracle-dotnet\\webform-cw\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{193F962C-B82B-4084-AD08-364924E372BD}|webform-cw\\webform-cw.csproj|D:\\rajiv\\oracle-dotnet\\webform-cw\\webform-cw\\lesson.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{193F962C-B82B-4084-AD08-364924E372BD}|webform-cw\\webform-cw.csproj|solutionrelative:webform-cw\\lesson.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{193F962C-B82B-4084-AD08-364924E372BD}|webform-cw\\webform-cw.csproj|D:\\rajiv\\oracle-dotnet\\webform-cw\\webform-cw\\Site.Master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{193F962C-B82B-4084-AD08-364924E372BD}|webform-cw\\webform-cw.csproj|solutionrelative:webform-cw\\Site.Master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{193F962C-B82B-4084-AD08-364924E372BD}|webform-cw\\webform-cw.csproj|D:\\rajiv\\oracle-dotnet\\webform-cw\\webform-cw\\Student.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{193F962C-B82B-4084-AD08-364924E372BD}|webform-cw\\webform-cw.csproj|solutionrelative:webform-cw\\Student.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{193F962C-B82B-4084-AD08-364924E372BD}|webform-cw\\webform-cw.csproj|D:\\rajiv\\oracle-dotnet\\webform-cw\\webform-cw\\studentprogress.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{193F962C-B82B-4084-AD08-364924E372BD}|webform-cw\\webform-cw.csproj|solutionrelative:webform-cw\\studentprogress.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{193F962C-B82B-4084-AD08-364924E372BD}|webform-cw\\webform-cw.csproj|D:\\rajiv\\oracle-dotnet\\webform-cw\\webform-cw\\instructor.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{193F962C-B82B-4084-AD08-364924E372BD}|webform-cw\\webform-cw.csproj|solutionrelative:webform-cw\\instructor.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{193F962C-B82B-4084-AD08-364924E372BD}|webform-cw\\webform-cw.csproj|D:\\rajiv\\oracle-dotnet\\webform-cw\\webform-cw\\course.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{193F962C-B82B-4084-AD08-364924E372BD}|webform-cw\\webform-cw.csproj|solutionrelative:webform-cw\\course.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{193F962C-B82B-4084-AD08-364924E372BD}|webform-cw\\webform-cw.csproj|d:\\rajiv\\oracle-dotnet\\webform-cw\\webform-cw\\dashboard.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{193F962C-B82B-4084-AD08-364924E372BD}|webform-cw\\webform-cw.csproj|solutionrelative:webform-cw\\dashboard.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 43,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Course.aspx",
+              "DocumentMoniker": "D:\\rajiv\\oracle-dotnet\\webform-cw\\webform-cw\\Course.aspx",
+              "RelativeDocumentMoniker": "webform-cw\\Course.aspx",
+              "ToolTip": "D:\\rajiv\\oracle-dotnet\\webform-cw\\webform-cw\\Course.aspx",
+              "RelativeToolTip": "webform-cw\\Course.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-03-17T18:33:51.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Lesson.aspx",
+              "DocumentMoniker": "D:\\rajiv\\oracle-dotnet\\webform-cw\\webform-cw\\Lesson.aspx",
+              "RelativeDocumentMoniker": "webform-cw\\Lesson.aspx",
+              "ToolTip": "D:\\rajiv\\oracle-dotnet\\webform-cw\\webform-cw\\Lesson.aspx",
+              "RelativeToolTip": "webform-cw\\Lesson.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-03-16T08:06:33.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Instructor.aspx",
+              "DocumentMoniker": "D:\\rajiv\\oracle-dotnet\\webform-cw\\webform-cw\\Instructor.aspx",
+              "RelativeDocumentMoniker": "webform-cw\\Instructor.aspx",
+              "ToolTip": "D:\\rajiv\\oracle-dotnet\\webform-cw\\webform-cw\\Instructor.aspx",
+              "RelativeToolTip": "webform-cw\\Instructor.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-03-17T14:52:57.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Dashboard.aspx",
+              "DocumentMoniker": "D:\\rajiv\\oracle-dotnet\\webform-cw\\webform-cw\\Dashboard.aspx",
+              "RelativeDocumentMoniker": "webform-cw\\Dashboard.aspx",
+              "ToolTip": "D:\\rajiv\\oracle-dotnet\\webform-cw\\webform-cw\\Dashboard.aspx",
+              "RelativeToolTip": "webform-cw\\Dashboard.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-03-16T17:59:06.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentProgress.aspx",
+              "DocumentMoniker": "D:\\rajiv\\oracle-dotnet\\webform-cw\\webform-cw\\StudentProgress.aspx",
+              "RelativeDocumentMoniker": "webform-cw\\StudentProgress.aspx",
+              "ToolTip": "D:\\rajiv\\oracle-dotnet\\webform-cw\\webform-cw\\StudentProgress.aspx",
+              "RelativeToolTip": "webform-cw\\StudentProgress.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-03-17T18:38:58.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Student.aspx",
+              "DocumentMoniker": "D:\\rajiv\\oracle-dotnet\\webform-cw\\webform-cw\\Student.aspx",
+              "RelativeDocumentMoniker": "webform-cw\\Student.aspx",
+              "ToolTip": "D:\\rajiv\\oracle-dotnet\\webform-cw\\webform-cw\\Student.aspx",
+              "RelativeToolTip": "webform-cw\\Student.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-03-15T18:24:14.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Site.Master",
+              "DocumentMoniker": "D:\\rajiv\\oracle-dotnet\\webform-cw\\webform-cw\\Site.Master",
+              "RelativeDocumentMoniker": "webform-cw\\Site.Master",
+              "ToolTip": "D:\\rajiv\\oracle-dotnet\\webform-cw\\webform-cw\\Site.Master",
+              "RelativeToolTip": "webform-cw\\Site.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-03-16T12:40:20.271Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

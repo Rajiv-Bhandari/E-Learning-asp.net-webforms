@@ -1,0 +1,106 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="webform_cw.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/site.css" rel="stylesheet" />
+
+    <style>
+        .sidebar-sticky {
+            background-color: #292b2c; /* Dark background color */
+            color: #ffffff; /* White text color */
+            height: 100vh; /* Full height of the viewport */
+            position: fixed; /* Fixed position */
+            top: 0; /* Align to the top */
+            left: 0; /* Align to the left */
+            z-index: 1; /* Ensure it's on top of other content */
+            overflow-y: auto; /* Add scroll if needed */
+            padding-top: 20px; /* Add top padding */
+        }
+
+        .sidebar-sticky .nav-link {
+            color: #ffffff; /* White text color */
+            padding: 10px 20px; /* Add padding to each link */
+            transition: all 0.3s ease; /* Add smooth transition */
+        }
+
+        .sidebar-sticky .nav-link:hover {
+            background-color: #007bff; /* Blue color on hover */
+            color: #ffffff; /* White text color on hover */
+            text-decoration: none; /* Remove underline on hover */
+        }
+
+        .sidebar-sticky .nav-link.active {
+            background-color: #007bff; /* Blue color for active item */
+            color: #ffffff; /* White text color for active item */
+        }
+
+        .content-wrapper {
+            margin-left: 200px; /* Adjust this value based on sidebar width */
+            padding: 20px; /* Add padding to the content */
+        }
+
+        @media (max-width: 768px) {
+            .sidebar-sticky {
+                position: relative; /* Reset position for smaller screens */
+                height: auto; /* Reset height for smaller screens */
+            }
+
+            .content-wrapper {
+                margin-left: 0; /* Reset margin for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <form runat="server">
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="col-md-2 d-md-block bg-dark sidebar sidebar-sticky">
+                    <div class="sidebar-sticky">
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link" href="/Dashboard.aspx">Dashboard</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/Student.aspx">Student</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/Instructor.aspx">Instructor</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/Course.aspx">Course</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/Lesson.aspx">Lesson</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/StudentProgress.aspx">Student Progress</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/StudentEnrollment.aspx">Student Enrollment</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/CourseInstructor.aspx">Course Instructor</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/Top3Course-enrolled-stnd.aspx">Top E-Learning Course</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <main role="main" class="col-md-10 ml-sm-auto col-lg-10 px-4 content-wrapper">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </main>
+            </div>
+        </div>
+    </form>
+
+    <script src="/Scripts/jquery.js"></script>
+    <script src="/Scripts/bootstrap.bundle.js"></script>
+    <script>
+        // JavaScript to add 'active' class to clicked sidebar item
+        $(document).ready(function () {
+            $('.sidebar-sticky .nav-link').on('click', function () {
+                $('.sidebar-sticky .nav-link').removeClass('active');
+                $(this).addClass('active');
+            });
+
+            // Highlight the initially active item
+            $('.sidebar-sticky .nav-link').each(function () {
+                if ($(this).attr('href') === window.location.pathname) {
+                    $(this).addClass('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
