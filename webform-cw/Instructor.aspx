@@ -8,7 +8,7 @@
             </div>
         </div>
         
-        <asp:FormView ID="FormView1" runat="server" DataKeyNames="INSTRUCTOR_ID" DataSourceID="SqlDataSource1" CssClass="form-horizontal">
+    <asp:FormView ID="FormView1" runat="server" DataKeyNames="INSTRUCTOR_ID" DataSourceID="SqlDataSource1" CssClass="form-horizontal">
         <InsertItemTemplate>
             <div class="row" style="margin-bottom:20px;">
                 <div class="col-sm-3">
@@ -21,39 +21,68 @@
                     <div class="form-group">
                         <label class="control-label" for="INSTRUCTOR_NAMETextBox">Instructor Name</label>
                         <asp:TextBox ID="INSTRUCTOR_NAMETextBox" runat="server" Text='<%# Bind("INSTRUCTOR_NAME") %>' CssClass="form-control" />
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="INSTRUCTOR_NAMETextBox" ErrorMessage="*" CssClass="text-danger" />
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="form-group">
                         <label class="control-label" for="CONTACTTextBox">Contact</label>
                         <asp:TextBox ID="CONTACTTextBox" runat="server" Text='<%# Bind("CONTACT") %>' CssClass="form-control" />
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="CONTACTTextBox" ErrorMessage="*" CssClass="text-danger" />
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="form-group" style="margin-top:20px;">
-                        <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" CssClass="btn btn-success" />
+                        <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" CssClass="btn btn-success" OnClientClick="return ValidateForm();" />
                         <asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" CssClass="btn btn-danger" />
                     </div>
                 </div>
             </div>
         </InsertItemTemplate>
-
-
-                    <ItemTemplate>
-            <div class="form-group">
-                <div style="margin-left: 950px; margin-top: -60px;">
-                    <asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="Create" CssClass="btn btn-info" />
+                <ItemTemplate>
+                <div class="form-group">
+                    <div style="margin-left: 950px; margin-top: -60px;">
+                        <asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="Create" CssClass="btn btn-info" />
+                    </div>
                 </div>
-            </div>
-        </ItemTemplate>
-        </asp:FormView>
+            </ItemTemplate>
+    </asp:FormView>
+
+<script type="text/javascript">
+    function ValidateForm() {
+        var instructorNameTextBox = document.getElementById('<%= FormView1.FindControl("INSTRUCTOR_NAMETextBox")?.ClientID %>');
+        var contactTextBox = document.getElementById('<%= FormView1.FindControl("CONTACTTextBox")?.ClientID %>');
+
+        if (!instructorNameTextBox || !contactTextBox) {
+            alert('Form controls not found.');
+            return false;
+        }
+
+        var instructorName = instructorNameTextBox.value.trim();
+        var contact = contactTextBox.value.trim();
+
+        if (instructorName === '' || contact === '') {
+            alert('Please enter all required fields.');
+            return false;
+        }
+        return true;
+    }
+</script>
+
+
+
         
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="INSTRUCTOR_ID" DataSourceID="SqlDataSource1" CssClass="table table-bordered table-striped">
             <Columns>
                 <asp:BoundField DataField="INSTRUCTOR_ID" HeaderText="INSTRUCTOR_ID" ReadOnly="True" SortExpression="INSTRUCTOR_ID" />
                 <asp:BoundField DataField="INSTRUCTOR_NAME" HeaderText="INSTRUCTOR_NAME" SortExpression="INSTRUCTOR_NAME" />
                 <asp:BoundField DataField="CONTACT" HeaderText="CONTACT" SortExpression="CONTACT" />
-                <asp:CommandField ShowEditButton="True" ShowDeleteButton="True" HeaderText="ACTION" ControlStyle-CssClass="btn btn-outline-danger btn-sm" ButtonType="Button" EditText="Edit" DeleteText="Delete" />
+                            <asp:CommandField ShowEditButton="True" >
+                <ControlStyle CssClass="btn btn-success btn-sm" />
+                </asp:CommandField>
+                <asp:CommandField ShowDeleteButton="True" >
+                    <ControlStyle CssClass="btn btn-danger btn-sm" />
+                </asp:CommandField>
             </Columns>
         </asp:GridView>
         

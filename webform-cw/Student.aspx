@@ -73,7 +73,12 @@
             <asp:BoundField DataField="DOB" HeaderText="DOB" SortExpression="DOB" DataFormatString="{0:yyyy-MM-dd}" />
             <asp:BoundField DataField="EMAIL_ADDRESS" HeaderText="EMAIL ADDRESS" SortExpression="EMAIL_ADDRESS" />
             <asp:BoundField DataField="COUNTRY" HeaderText="COUNTRY" SortExpression="COUNTRY" />
-            <asp:CommandField ShowEditButton="True" ShowDeleteButton="True" ButtonType="Button" HeaderText="ACTION" ItemStyle-HorizontalAlign="Center" ControlStyle-CssClass="btn btn-outline-danger btn-sm" DeleteText="Delete" EditText="Edit" />
+            <asp:CommandField ShowEditButton="True" >
+                <ControlStyle CssClass="btn btn-success btn-sm" />
+            </asp:CommandField>
+            <asp:CommandField ShowDeleteButton="True" >
+                <ControlStyle CssClass="btn btn-danger btn-sm" />
+            </asp:CommandField>
         </Columns>
         <RowStyle CssClass="align-middle" />
         <HeaderStyle CssClass="thead-dark" />

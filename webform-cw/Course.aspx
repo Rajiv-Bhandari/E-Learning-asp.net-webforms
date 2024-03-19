@@ -74,7 +74,12 @@
                                 <asp:SqlDataSource ID="instructorname" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" SelectCommand="SELECT &quot;INSTRUCTOR_ID&quot;, &quot;INSTRUCTOR_NAME&quot; FROM &quot;INSTRUCTOR&quot;"></asp:SqlDataSource>
                             </ItemTemplate>
                         </asp:TemplateField>
-                        <asp:CommandField ShowDeleteButton="True" HeaderText="Action" ShowEditButton="True" ButtonType="Button" ControlStyle-CssClass="btn btn-outline-danger btn-sm" />
+                                    <asp:CommandField ShowEditButton="True" >
+                <ControlStyle CssClass="btn btn-success btn-sm" />
+                </asp:CommandField>
+                <asp:CommandField ShowDeleteButton="True" >
+                    <ControlStyle CssClass="btn btn-danger btn-sm" />
+                </asp:CommandField>
                     </Columns>
                     <PagerStyle CssClass="pagination" />
                     <HeaderStyle CssClass="thead-dark" />
