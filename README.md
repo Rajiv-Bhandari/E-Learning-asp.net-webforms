@@ -1,4 +1,4 @@
-![image](https://github.com/Rajiv-Bhandari/E-Learning-asp.net-webforms/assets/52075871/92ee20b9-f2a6-4809-bb20-d4a6211e2a93)# E-Learning Platform
+# E-Learning Platform
 
 ## Description
 
